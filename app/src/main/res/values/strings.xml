@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">stampa</string>
+    <string name="title_activity_profile_navigation">ProfileNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="open" />
+    <string name="close" />
+    <string name="periksa_sekarang">Periksa Sekarang</string>
+    <string name="detail">detail</string>
+    <string name="name">Name</string>
+    <string name="remarks">Remarks</string>
+    <string name="cari_toko">Cari Toko</string>
+</resources>

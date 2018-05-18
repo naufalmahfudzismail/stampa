@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".MainMenuActivity"
+    >
+
+
+
+    <android.support.design.widget.NavigationView
+        android:background="#b0f574"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:menu="@menu/nav_menu">
+
+    <ImageView
+       android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_account"/>
+
+    </android.support.design.widget.NavigationView>
+
+    <ScrollView
+        android:background="#766565"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:ignore="ScrollViewCount">
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+           android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ic_magnify"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_search"/>
+
+        <EditText
+            android:layout_margin="16dp"
+            android:maxHeight="20dp"
+            android:layout_width="match_parent"
+            android:layout_toEndOf ="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/input_search"
+            android:background="@null"
+            android:hint="@string/cari_toko"
+            android:imeOptions="actionSearch"
+            android:layout_height="20dp" />
+
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:background="@drawable/pager_border"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/toko_pager"
+            android:layout_gravity="top">
+        </android.support.v4.view.ViewPager>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>
